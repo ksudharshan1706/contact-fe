@@ -12,6 +12,7 @@ import HorizontalRuleIcon from "@mui/icons-material/HorizontalRule";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import AddBoxIcon from "@mui/icons-material/AddBox";
+import RemoveCircleIcon from "@mui/icons-material/RemoveCircle";
 
 const Contacts = () => {
   const {
@@ -111,7 +112,15 @@ const Contacts = () => {
                   onChange={(e) => setPhone(e.target.value)}
                 />
               </div>
-              <div>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  gap: "50px",
+                }}
+              >
                 <AddBoxIcon
                   variant="contained"
                   style={{
@@ -123,6 +132,16 @@ const Contacts = () => {
                 >
                   Add
                 </AddBoxIcon>
+                <RemoveCircleIcon
+                  style={{
+                    width: "50px",
+                    marginRight: "20px",
+                    cursor: "pointer",
+                  }}
+                  onClick={() => {
+                    setNewcontact(!newcontact);
+                  }}
+                />
               </div>
             </div>
             <HorizontalRuleIcon style={{ width: "200px" }} />
