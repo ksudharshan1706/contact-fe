@@ -1,0 +1,42 @@
+.mobileouterContainer{
+    height: 700px;
+    width: 400px;
+    border: 2px solid;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+
+.mobileinnerContainer{
+    height: 690px;
+    width: 390px;
+    border: 2px solid;
+    border-radius: 10%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.appheading{
+    text-align: center;
+    margin: 5px 0 25px 0
+}
+
+.newcontact{
+    margin-left: 4.5%;
+    width: 90%;         
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    gap: 20px;
+    /* border: 2px solid; */
+    border-radius: 20px;
+    flex-direction: column;
+    height: 200px;
+}
+

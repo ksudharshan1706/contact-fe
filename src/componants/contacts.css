@@ -1,0 +1,116 @@
+
+.contacts{
+    width: 90%;
+    margin: 10px 0 30px 0;
+    height: 90%;
+    border: 5px solid;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    /* overflow: auto; */
+    overflow-y: scroll;
+
+}
+
+::-webkit-scrollbar {
+    margin-top: 10px;
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(179, 179, 179);
+  }
+
+.contact{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: white;
+    z-index: 999;
+}
+
+.contactItem{
+    width: 95%;
+    height: 80px;
+    border: 2px solid ;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(172, 168, 168, 0.215);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.editItem{
+    width: 90%;
+    min-height: 100px;
+    border: 2px solid;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: rgba(10, 100, 106, 0.795) 0px 3px 8px;
+}
+
+.editItemname{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    flex-direction: column;
+    gap: 15px;
+}
+.editItemname>input{
+    height: 30px;
+    width: 200px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+  
+  .searchbar {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 90%;
+    height: 30px;
+    /* background-color: white; */
+    border-radius: 30px;
+    border: 2px solid #928f8f;
+    display: flex;
+    align-items: center;
+  }
+  
+  .searchIcon {
+    font-size: 20px !important;
+    margin-left: 10px;
+  }
+  
+  .searchInput {
+    border: none;
+    width: 70%;
+  }
+  
+  .searchInput:focus {
+    outline: none;
+  }
+  
+  .newcontactcss{
+    margin-left: 4.5%;
+    width: 90%;         
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 20px;
+    /* border: 2px solid; */
+    border-radius: 20px;
+    /* flex-direction: column; */
+    height: 200px;
+}
+
