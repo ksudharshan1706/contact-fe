@@ -11,6 +11,7 @@ import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import HorizontalRuleIcon from "@mui/icons-material/HorizontalRule";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import AddBoxIcon from "@mui/icons-material/AddBox";
 
 const Contacts = () => {
   const {
@@ -84,7 +85,7 @@ const Contacts = () => {
         {newcontact ? null : (
           <AddCircleOutlineIcon
             variant="contained"
-            style={{ width: "100%" }}
+            style={{ width: "100%", cursor: "pointer" }}
             onClick={() => setNewcontact(!newcontact)}
           >
             Add contact
@@ -96,14 +97,14 @@ const Contacts = () => {
             <div className="newcontactcss">
               <div style={{ display: "flex", flexDirection: "column" }}>
                 <TextField
-                  style={{ width: "90%", margin: "10px 0 10px 0" }}
+                  style={{ width: "90%", margin: "10px 0 10px 10px" }}
                   id="outlined-basic"
                   label="name"
                   variant="outlined"
                   onChange={(e) => setName(e.target.value)}
                 />
                 <TextField
-                  style={{ width: "90%" }}
+                  style={{ width: "90%", margin: "10px 0 10px 10px" }}
                   id="outlined-basic"
                   label="phoneno"
                   variant="outlined"
@@ -111,13 +112,17 @@ const Contacts = () => {
                 />
               </div>
               <div>
-                <Button
+                <AddBoxIcon
                   variant="contained"
-                  style={{ width: "50px", marginRight: "30px" }}
+                  style={{
+                    width: "50px",
+                    marginRight: "20px",
+                    cursor: "pointer",
+                  }}
                   onClick={AddNewcontact}
                 >
                   Add
-                </Button>
+                </AddBoxIcon>
               </div>
             </div>
             <HorizontalRuleIcon style={{ width: "200px" }} />

@@ -16,8 +16,20 @@ const Mobile = () => {
             }}
           ></div>
         </div>
-
         <Contacts />
+        <div
+          style={{
+            width: "50px",
+            height: "50px",
+            borderRadius: "50%",
+            backgroundColor: "white",
+            marginTop: "-20px",
+            marginBottom: "20px",
+            border: "2px solid",
+            cursor: "pointer",
+          }}
+          onClick={() => window.location.reload()}
+        ></div>
       </div>
     </div>
   );

@@ -3,24 +3,27 @@
     width: 90%;
     margin: 10px 0 30px 0;
     height: 90%;
-    border: 5px solid;
+    border: 5px solid rgb(62, 60, 60);
     display: flex;
     justify-content: center;
     border-radius: 10px;
     /* overflow: auto; */
     overflow-y: scroll;
+    background-color:   rgb(236, 212, 212);
 
 }
 
 ::-webkit-scrollbar {
-    margin-top: 10px;
+    /* margin-top: 10px; */
     width: 5px;
+    border-radius: 10%;
   }
   ::-webkit-scrollbar-track {
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
+    background-color: rgb(236, 212, 212);
   }
   ::-webkit-scrollbar-thumb {
-    background-color: rgb(179, 179, 179);
+    background-color: rgba(203, 96, 96, 0.774);
   }
 
 .contact{
@@ -30,22 +33,24 @@
     align-items: center;
     flex-direction: column;
     border-radius: 10px;
-    background-color: white;
+    background-color:   rgb(236, 212, 212);
     z-index: 999;
 }
 
 .contactItem{
     width: 95%;
     height: 80px;
-    border: 2px solid ;
+    /* border: 2px solid ; */
     margin-top: 20px;
     display: flex;
     gap: 10px;
     justify-content: space-around;
     align-items: center;
     border-radius: 10px;
-    background-color: rgba(172, 168, 168, 0.215);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 
@@ -58,6 +63,7 @@
     justify-content: space-around;
     align-items: center;
     border-radius: 10px;
+    background-color: rgb(255, 255, 255);
     box-shadow: rgba(10, 100, 106, 0.795) 0px 3px 8px;
 }
 
@@ -76,15 +82,16 @@
 }
   
   .searchbar {
-    margin-left: 10px;
+    margin-left: 1px;
     margin-top: 10px;
-    width: 90%;
+    width: 100%;
     height: 30px;
     /* background-color: white; */
     border-radius: 30px;
     border: 2px solid #928f8f;
     display: flex;
     align-items: center;
+    background-color: white;
   }
   
   .searchIcon {
@@ -102,15 +109,15 @@
   }
   
   .newcontactcss{
-    margin-left: 4.5%;
+    margin-top: 10px;
     width: 90%;         
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     gap: 20px;
-    /* border: 2px solid; */
     border-radius: 20px;
-    /* flex-direction: column; */
-    height: 200px;
+    background-color: white;
+    height: 250px;
+    /* border: 2px solid; */
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 

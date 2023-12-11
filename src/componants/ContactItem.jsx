@@ -61,7 +61,7 @@ const ContactItem = ({ data }) => {
             <p>name: {data.name}</p>
             <p>phone no: {data.phoneno}</p>
           </div>
-          <EditIcon onClick={editFn} />
+          <EditIcon onClick={editFn} style={{ cursor: "pointer" }} />
         </div>
       ) : (
         <div className="editItem">
@@ -78,8 +78,11 @@ const ContactItem = ({ data }) => {
           <div
             style={{ display: "flex", flexDirection: "column", gap: "10px" }}
           >
-            <UpgradeIcon onClick={updateContact} />
-            <DeleteIcon onClick={deleteContact} />
+            <UpgradeIcon
+              onClick={updateContact}
+              style={{ cursor: "pointer" }}
+            />
+            <DeleteIcon onClick={deleteContact} style={{ cursor: "pointer" }} />
           </div>
         </div>
       )}
